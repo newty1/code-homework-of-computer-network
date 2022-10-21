@@ -126,10 +126,10 @@ void main() {
 			send(sockCli, buff.c_str(), strlen(buff.c_str()), 0);
 		}
 		else {
-			buff = time + name + " : " + buff;
-			send(sockCli, buff.c_str(), strlen(buff.c_str()), 0);
-
-		}
+		buff = time + name + " : " + buff;
+		send(sockCli, buff.c_str(), strlen(buff.c_str()), 0);
+		
+	}
 	}
 		
 	closesocket(sockCli);
